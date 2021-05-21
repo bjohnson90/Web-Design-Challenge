@@ -1,6 +1,37 @@
 .navbar-color {
     background-color:#4aaaa5
 }
+@media (min-width: 768px) {
+    .reg-nav {
+        display: block;
+    }
+    .mini-nav {
+        display: none;
+    }
+}
+@media (max-width: 767.98px) {
+    .reg-nav {
+        display: none;
+    }
+    .mini-nav {
+        display: flex;
+    }
+}
 .title-color {
     color: #ededed
+}
+.h2-styling {
+    color:#4aaaa5;
+    padding-top: 25px;
+    padding-bottom: 75px;
+}
+.background-container {
+    background-color: #ededed;
+    padding-top: 50px;
+    min-height: 100vh;
+
+}
+
+p {
+    font-size: 1.2rem;
 }
