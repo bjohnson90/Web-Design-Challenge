@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/web-challenge.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>CSS Review</title>
+  </head>
+
+  <body>
+    <div class="nav-container">
+      <div class="reg-nav" style="height: 56px">
+        <div class="navbar-color" style="float:left">
+          <h1 class="title-color">Latitude</h1>
+        </div>
+        <div style="float:right">
+          <ul class="nav nav-pills">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Max Temperature</a>
+                <a class="dropdown-item" href="#">Humidity</a>
+                <a class="dropdown-item" href="#">Cloudiness</a>
+                <a class="dropdown-item" href="#">Wind Speed</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Comparisions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Data</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light mini-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    </div>
+    <div class="background-container">
+      <div class="container">
+        <main>
+          <div class="row">
+            <div class="col-md-8 card">
+              <h2 class="h2-styling">Summary: Latitude vs. X</h2>
+              <p><img src="Resources\assets\images\Fig1.png" style="float:left;max-width:250px;" >The purpose of this project was to analyze how weather changes as you get closer to the equator.
+                To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                <br /><br />
+                After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+                Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the
+                source data and visualizations created as part of the analysis, as well as explainations and descriptions of any
+                trends and correlations witnessed.
+              </p>
+            </div>
+            <div class="col-md-4 card">
+              <div class="row"><h2 class="h2-styling">Visualizations</h2></div>
+              <div class="row">
+                <div class="col-lg-6"><img src="Resources\assets\images\Fig1.png" style="float:left;max-width:100%;" ></div>
+                <div class="col-lg-6"><img src="Resources\assets\images\Fig2.png" style="float:left;max-width:100%;" ></div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6"><img src="Resources\assets\images\Fig3.png" style="float:left;max-width:100%;" ></div>
+                <div class="col-lg-6"><img src="Resources\assets\images\Fig4.png" style="float:left;max-width:100%;" ></div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+
+</html>
